@@ -75,6 +75,7 @@ nav ul li a{
     color: #00a2ff;
     line-height: 50px;
     font-weight: 400;
+    animation-delay: 0.7s;
 }
 
 .headerDescription p{
@@ -83,6 +84,7 @@ nav ul li a{
     color: #4f9da7;
     font-size: 22px;
     line-height: 30px;
+    animation-delay: 1.4s;
 }
 
 .featureContent{
@@ -280,4 +282,128 @@ nav ul li a{
 .privacyPolicyHeader p{
     color: #00a2ff;
 }
+
+.initialAnimation1{
+    opacity: 0;
+    transform: scale(0,0);
+    animation: scale1 0.5s linear forwards;
+}
+
+@keyframes scale1 {
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+.initialAnimation2{
+    opacity: 0;
+    transform: translateX(100px);
+    animation: moveLeft1 0.5s linear forwards;
+}
+
+@keyframes moveLeft1 {
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.scrollAnimationMoveLeft{
+    animation: moveLeft2 linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+
+@keyframes moveLeft2 {
+    0%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    80%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.scrollAnimationMoveRight2{
+    animation: moveRight2 linear both;
+    animation-timeline: view();
+    animation-range: entry 70% cover 70%;
+}
+
+@keyframes moveRight2 {
+    0%{
+        transform: translateX(-100px);
+    }
+    20%{
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.scrollAnimationMoveLeft2{
+    animation: moveLeft3 linear both;
+    animation-timeline: view();
+    animation-range: entry 70% cover 70%;
+}
+
+@keyframes moveLeft3 {
+    0%{
+        transform: translateX(100px);
+    }
+    20%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.scrollAnimationScale{
+    opacity: 0;
+    transform: scale(0,0);
+    animation: scale2 1s linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+
+@keyframes scale2 {
+    0%{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    20%{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    80%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+
+
+
 
