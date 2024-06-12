@@ -3,14 +3,14 @@
     src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     background-color: #04316a;
@@ -19,30 +19,40 @@ body{
     flex-direction: column;
 }
 
-nav{
-    padding: 10px 10%;
-    display: flex;
+nav {
+    width: 100%;
+    padding: 10px 5%;
+    display: inline-block;
     align-items: center;
-    justify-content: space-between;
 }
 
-.logo{
+.logo {
     height: 40px;
+    float: left;
 }
 
-nav ul li{
+nav ul {
+    float: right;
+}
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 15px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 400;
 }
 
-.btn{
+.downloadApp {
+    float: right;
+    margin-left: 20px;
+}
+
+.btn {
     display: inline-block;
     text-decoration: none;
     padding: 14px 40px;
@@ -52,16 +62,16 @@ nav ul li a{
     border-radius: 30px;
 }
 
-.headerContent{
+.headerContent {
     display: block;
 }
 
-.header-img{
+.header-img {
     width: 50%;
     float: left;
 }
 
-.headerDescription{
+.headerDescription {
     width: 50%;
     padding-top: 150px;
     padding-left: 10px;
@@ -70,7 +80,7 @@ nav ul li a{
     text-align: right;
 }
 
-.headerDescription h1{
+.headerDescription h1 {
     font-size: 35px;
     color: #00a2ff;
     line-height: 50px;
@@ -78,7 +88,7 @@ nav ul li a{
     animation-delay: 0.7s;
 }
 
-.headerDescription p{
+.headerDescription p {
     margin-top: 15px;
     padding-right: 15px;
     color: #4f9da7;
@@ -87,7 +97,7 @@ nav ul li a{
     animation-delay: 1.4s;
 }
 
-.featureContent{
+.featureContent {
     display: inline-block;
     width: 100%;
     background-color: #FFEFDE;
@@ -96,66 +106,66 @@ nav ul li a{
     color: #4D4B55;
 }
 
-.featureContent h1{
+.featureContent h1 {
     font-size: 80px;
     font-weight: 500;
     line-height: 120px;
 }
 
-.featureContent h2{
+.featureContent h2 {
     font-size: 40px;
     font-weight: 300;
     line-height: 60px;
 }
 
-.featureDescription{
+.featureDescription {
     width: 100%;
     background-color: #04316a;
 }
 
-.featureDescription h1{
+.featureDescription h1 {
     font-size: 80px;
     font-weight: 500;
     display: inline;
 }
 
-.featureDescription h2{
+.featureDescription h2 {
     font-size: 60px;
     font-weight: 300;
     display: inline;
 }
 
-.featureSeparator{
+.featureSeparator {
     width: 100%;
     height: 80px;
     background-color: #04316a;
     display: inline-block;
 }
 
-.reasonZero{
+.reasonZero {
     height: 250px;
     background-color: white;
 }
 
-.reasonZero1{
+.reasonZero1 {
     width: calc(40% - 40px);
     height: 100%;
     background-color: #ffbe55;
     float: left;
 }
 
-.reasonZero1ContentWrapper{
+.reasonZero1ContentWrapper {
     float: right;
     margin-top: 50px;
 }
 
-.reasonZero1ContentWrapper h2{
+.reasonZero1ContentWrapper h2 {
     font-size: 80px;
     font-weight: 500;
     color: #484B55;
 }
 
-.reasonZero2{
+.reasonZero2 {
     width: calc(60% + 40px);
     height: 100%;
     background-color: #04316a;
@@ -165,42 +175,42 @@ nav ul li a{
     box-sizing: border-box;
 }
 
-.reasonZero2ContentWrapper{
+.reasonZero2ContentWrapper {
     float: left;
     margin-top: 50px;
     color: white;
     padding-left: 35px;
 }
 
-.reasonDescription{
+.reasonDescription {
     color: white;
     padding: 15px 5%;
     float: left;
 }
 
-.reasonDescription h1{
+.reasonDescription h1 {
     font-size: 60px;
     font-weight: 500;
     display: inline;
 }
 
-.reasonDescription h2{
+.reasonDescription h2 {
     font-size: 40px;
     font-weight: 300;
     display: inline;
 }
 
-.reasonDescription1{
+.reasonDescription1 {
     width: calc(90% - 320px);
 }
 
-.reasonKey{
+.reasonKey {
     color: #484B55;
     background-color: #ffbe55;
     padding-top: 30px;
 }
 
-.reasonKey1{
+.reasonKey1 {
     width: 320px;
     height: 320px;
     float: left;
@@ -208,11 +218,11 @@ nav ul li a{
     margin-right: 10%;
 }
 
-.reasonDescription2{
+.reasonDescription2 {
     width: calc(90% - 360px);
 }
 
-.reasonKey2{
+.reasonKey2 {
     width: 360px;
     height: 360px;
     float: left;
@@ -220,11 +230,11 @@ nav ul li a{
     margin-left: 10%;
 }
 
-.reasonDescription3{
+.reasonDescription3 {
     width: calc(90% - 320px);
 }
 
-.reasonKey3{
+.reasonKey3 {
     width: 320px;
     height: 320px;
     float: left;
@@ -232,11 +242,11 @@ nav ul li a{
     margin-right: 10%;
 }
 
-.reasonDescription4{
+.reasonDescription4 {
     width: calc(90% - 470px);
 }
 
-.reasonKey4{
+.reasonKey4 {
     width: 470px;
     height: 470px;
     float: left;
@@ -245,11 +255,11 @@ nav ul li a{
     padding-left: 16px;
 }
 
-.reasonDescription5{
+.reasonDescription5 {
     width: calc(90% - 320px);
 }
 
-.reasonKey5{
+.reasonKey5 {
     width: 320px;
     height: 320px;
     float: left;
@@ -257,7 +267,7 @@ nav ul li a{
     margin-right: 10%;
 }
 
-.footer{
+.footer {
     width: 100%;
     padding: 40px 10%;
     margin-top: auto;
@@ -265,145 +275,86 @@ nav ul li a{
     background-color: #4D4B55;
 }
 
-.footer h3{
+.footer h3 {
     font-weight: 200;
     line-height: 150%;
 }
 
-.privacyPolicyHeader{
-   padding: 20px 6%; 
+.privacyPolicyHeader {
+    padding: 20px 6%;
 }
 
-.privacyPolicyHeader h3{
+.privacyPolicyHeader h3 {
     color: white;
     font-weight: 200;
 }
 
-.privacyPolicyHeader p{
+.privacyPolicyHeader p {
     color: #00a2ff;
 }
 
-.initialAnimation1{
+.initialAnimation1 {
     opacity: 0;
-    transform: scale(0,0);
+    transform: scale(0, 0);
     animation: scale1 0.5s linear forwards;
 }
 
 @keyframes scale1 {
-    100%{
+    100% {
         opacity: 1;
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 }
 
-.initialAnimation2{
+.initialAnimation2 {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(70px);
     animation: moveLeft1 0.5s linear forwards;
 }
 
 @keyframes moveLeft1 {
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.scrollAnimationMoveLeft{
-    animation: moveLeft2 linear both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
-}
-
-@keyframes moveLeft2 {
-    0%{
-        opacity: 0;
-        transform: translateX(70px);
-    }
-    20%{
-        opacity: 0;
-        transform: translateX(70px);
-    }
-    80%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.scrollAnimationMoveRight2{
-    animation: moveRight2 linear both;
-    animation-timeline: view();
-    animation-range: entry 70% cover 70%;
-}
-
-@keyframes moveRight2 {
-    0%{
-        transform: translateX(-100px);
-    }
-    20%{
-        transform: translateX(-100px);
-    }
-    80%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-.scrollAnimationMoveLeft2{
-    animation: moveLeft3 linear both;
-    animation-timeline: view();
-    animation-range: entry 70% cover 70%;
-}
-
-@keyframes moveLeft3 {
-    0%{
-        transform: translateX(100px);
-    }
-    20%{
-        transform: translateX(100px);
-    }
-    80%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-.scrollAnimationScale{
+.hidden1 {
     opacity: 0;
-    transform: scale(0,0);
-    animation: scale2 1s linear both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
+    transform: translateX(70px);
+    transition: all 1s;
 }
 
-@keyframes scale2 {
-    0%{
-        opacity: 0;
-        transform: scale(0,0);
-    }
-    20%{
-        opacity: 0;
-        transform: scale(0,0);
-    }
-    80%{
-        opacity: 1;
-        transform: scale(1,1);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1,1);
-    }
+.scrollAnimationMoveLeft1 {
+    opacity: 1;
+    transform: translateX(0);
 }
 
+.hidden2 {
+    transform: translateX(-100px);
+    transition: all 0.2s;
+}
 
+.scrollAnimationMoveRight2 {
+    transform: translateX(0);
+}
 
+.hidden3 {
+    transform: translateX(100px);
+    transition: all 0.2s;
+}
 
+.scrollAnimationMoveLeft2 {
+    transform: translateX(0);
+}
 
+.hidden4 {
+    opacity: 0;
+    transform: scale(0, 0);
+    transition: all 1s;
+}
+
+.scrollAnimationScale {
+    opacity: 1;
+    transform: scale(1, 1);
+}
