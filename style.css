@@ -239,11 +239,11 @@ body {
     margin-right: 10%;
 }
 
-.reasonDescription2 {
+.computer .reasonDescription2 {
     width: calc(90% - 28.125vw);
 }
 
-.reasonKey2 {
+.computer .reasonKey2 {
     width: 28.125vw;
     height: 28.125vw;
     float: left;
@@ -251,11 +251,11 @@ body {
     margin-left: 10%;
 }
 
-.reasonDescription3 {
+.computer .reasonDescription3 {
     width: calc(90% - 25vw);
 }
 
-.reasonKey3 {
+.computer .reasonKey3 {
     width: 25vw;
     height: 25vw;
     float: left;
@@ -263,11 +263,11 @@ body {
     margin-right: 10%;
 }
 
-.reasonDescription4 {
+.computer .reasonDescription4 {
     width: calc(90% - 36.71875vw);
 }
 
-.reasonKey4 {
+.computer .reasonKey4 {
     width: 36.71875vw;
     height: 36.71875vw;
     float: left;
@@ -276,11 +276,11 @@ body {
     padding-left: 1.25vw;
 }
 
-.reasonDescription5 {
+.computer .reasonDescription5 {
     width: calc(90% - 25vw);
 }
 
-.reasonKey5 {
+.computer .reasonKey5 {
     width: 25vw;
     height: 25vw;
     float: left;
