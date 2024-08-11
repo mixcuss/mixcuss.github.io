@@ -20,46 +20,60 @@ body {
     margin: auto;
 }
 
-nav {
+@media only screen and (min-width:1000px) {
+    .computer {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .computer {
+        display: none;
+    }
+}
+
+.computer nav {
     width: 100%;
     padding: 0.5vw 5%;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
     margin: 0;
+    font-size: 1vw;
+    background-color: #10305A;
 }
 
-.logo {
+.computer .logo {
     height: 3.125vw;
     float: left;
 }
 
-nav ul {
+.computer nav ul {
     float: right;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.computer nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0.78125vw 1.171875vw;
     padding: 0;
 }
 
-nav ul li a {
+.computer nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 400;
     font-size: 1.25vw;
 }
 
-.downloadApp {
+.computer .downloadApp {
     float: right;
     margin-left: 1.5625vw;
 }
 
-.btn {
+.computer .btn {
     display: inline-block;
     text-decoration: none;
     padding: 0.78125vw 3.125vw;
@@ -73,12 +87,12 @@ nav ul li a {
     display: block;
 }
 
-.header-img {
+.computer .header-img {
     width: 50%;
     float: left;
 }
 
-.headerDescription {
+.computer .headerDescription {
     width: 50%;
     padding-top: 11.71875vw;
     padding-left: 0.78125vw;
@@ -87,7 +101,7 @@ nav ul li a {
     text-align: right;
 }
 
-.headerDescription h1 {
+.computer .headerDescription h1 {
     font-size: 2.734375vw;
     color: #00a2ff;
     line-height: 3.90625vw;
@@ -95,7 +109,7 @@ nav ul li a {
     animation-delay: 0.7s;
 }
 
-.headerDescription p {
+.computer .headerDescription p {
     margin-top: 1.171875vw;
     padding-right: 1.171875vw;
     color: #4f9da7;
@@ -104,7 +118,7 @@ nav ul li a {
     animation-delay: 1.4s;
 }
 
-.featureContent {
+.computer .featureContent {
     display: inline-block;
     width: 100%;
     background-color: #FFEFDE;
@@ -113,111 +127,111 @@ nav ul li a {
     color: #4D4B55;
 }
 
-.featureContent h1 {
+.computer .featureContent h1 {
     font-size: 6.25vw;
     font-weight: 500;
     line-height: 9.375vw;
 }
 
-.featureContent h2 {
+.computer .featureContent h2 {
     font-size: 3.125vw;
     font-weight: 300;
     line-height: 4.6875vw;
 }
 
-.featureDescription {
+.computer .featureDescription {
     width: 100%;
     background-color: #04316a;
 }
 
-.featureDescription h1 {
+.computer .featureDescription h1 {
     font-size: 6.25vw;
     font-weight: 500;
     display: inline;
 }
 
-.featureDescription h2 {
+.computer .featureDescription h2 {
     font-size: 4.6875vw;
     font-weight: 300;
     display: inline;
 }
 
-.featureSeparator {
+.computer .featureSeparator {
     width: 100%;
     height: 6.25vw;
     background-color: #04316a;
     display: inline-block;
 }
 
-.reasonZero {
-    height: 11.71875vw;
+.computer.reasonZero {
+    height: 20vw;
     background-color: white;
 }
 
-.reasonZero1 {
+.computer .reasonZero1 {
     width: calc(40% - 3.125vw);
     height: 100%;
     background-color: #ffbe55;
     float: left;
 }
 
-.reasonZero1ContentWrapper {
+.computer .reasonZero1ContentWrapper {
     float: right;
     margin-top: 3.90625vw;
 }
 
-.reasonZero1ContentWrapper h2 {
+.computer .reasonZero1ContentWrapper h2 {
     font-size: 6.25vw;
     font-weight: 500;
     color: #484B55;
 }
 
-.reasonZero2 {
+.computer .reasonZero2 {
     width: calc(60% + 3.125vw);
     height: 100%;
     background-color: #04316a;
     float: left;
     border-left: 6.25vw solid #ffbe55;
-    border-bottom: 19.53125vw solid transparent;
+    border-bottom: 20vw solid transparent;
     box-sizing: border-box;
 }
 
-.reasonZero2ContentWrapper {
+.computer .reasonZero2ContentWrapper {
     float: left;
     margin-top: 3.90625vw;
     color: white;
     padding-left: 2.734375vw;
 }
 
-.reasonDescription {
+.computer .reasonDescription {
     color: white;
     padding: 1.171875vw 5%;
     float: left;
 }
 
-.reasonDescription h1 {
+.computer .reasonDescription h1 {
     font-size: 4.6875vw;
     font-weight: 500;
     display: inline;
 }
 
-.reasonDescription h2 {
+.computer .reasonDescription h2 {
     font-size: 3.125vw;
     font-weight: 300;
     display: inline;
 }
 
-.reasonDescription1 {
+.computer .reasonDescription1 {
     width: calc(90% - 25vw);
 }
 
-.reasonKey {
+.computer .reasonKey {
     color: #484B55;
     background-color: #ffbe55;
     padding-top: 2.34375vw;
 }
 
-.reasonKey1 {
+.computer .reasonKey1 {
     width: 25vw;
     height: 25vw;
     float: left;

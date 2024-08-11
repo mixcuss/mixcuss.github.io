@@ -5,131 +5,360 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/appIcon_transparent.png" />
     <script defer src="script.js"></script>
+    <script defer src="scriptMobile.js"></script>
     <title>MixCuss: Home</title>
 </head>
 
-<!-- Side-bar ref. https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<!-- https://www.w3schools.com/html/html_responsive.asp -->
 
 <body>
-    <nav>
-        <img src="images/logoWithName.png" class="logo">
-        <div>
-            <a href="#" class="downloadApp btn">Download App</a>
-        </div>
-        <ul>
-            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-            <li><a href="termsOfUse.html">Terms of Use</a></li>
-            <li><a href="legal.html">Legal</a></li>
-        </ul>
-    </nav>
-    <div class="headerContent">
-        <img src="images/login_background2x.png" class="header-img initialAnimation1">
-        <div class="headerDescription">
-            <h1 class="initialAnimation2">Now interaction is more<br>entertaining than ever</h1>
-            <p class="initialAnimation2">Make new memories with<br>new people every day</p>
-        </div>
+    <div class="computer">
+        <nav>
+            <img src="images/logoWithName.png" class="logo">
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=com.udyam.mixcuss" class="downloadApp btn"
+                    target="_blank">Install App</a>
+            </div>
+            <ul>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="termsOfUse.html">Terms of Use</a></li>
+                <li><a href="legal.html">Legal</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="featureContent">
-        <div class="hidden1">
-            <h2>Five reasons<br>why</h2>
-            <h1>MixCuss</h1>
-        </div>
+
+    <div class="mobile">
+        <nav>
+            <div onclick="openSidebar()" id="menuButton" class="menuButton">&#9776;</div>
+            <div onclick="closeSidebar()" id="closeButton" class="menuButton">&#x2715;</div>
+            <img src="images/logoWithName.png" alt="MixCuss" class="logo">
+        </nav>
     </div>
-    <div class="featureDescription reasonZero">
-        <div class="reasonZero1">
-            <div class="reasonZero1ContentWrapper hidden2">
-                <h2>Nothing</h2>
+
+    <div class="mobile">
+        <div id="sideNavBarrier" onclick="closeSidebar()"></div>
+    </div>
+
+    <div class="mobile">
+        <div id="mySidenav" class="sidenav">
+            <a onclick="closeSidebar()" href="#">About</a>
+            <a onclick="closeSidebar()" href="privacyPolicy.html">Privacy Policy</a>
+            <a onclick="closeSidebar()" href="termsOfUse.html">Terms of Use</a>
+            <a onclick="closeSidebar()" href="legal.html">Legal</a>
+            <a onclick="closeSidebar()" href="#">Contact</a>
+          </div>
+    </div>
+
+    <div class="computer">
+        <div class="headerContent">
+            <img src="images/login_background2x.png" class="header-img initialAnimation1">
+            <div class="headerDescription">
+                <h1 class="initialAnimation2">Now interaction is more<br>entertaining than ever</h1>
+                <p class="initialAnimation2">Make new memories with<br>new people every day</p>
             </div>
         </div>
-        <div class="reasonZero2">
-            <div class="reasonZero2ContentWrapper hidden3">
-                <h2>just for<br>something </h2>
-                <h1>New</h1>
+    </div>
+
+    <div class="mobile">
+        <div class="headerContent">
+            <img src="images/login_background2x.png" alt="" class="header-img">
+            <div class="headerDescription">
+                <h1>Now interaction is more<br>entertaining than ever</h1>
+                <p>Make new memories with<br>new people every day</p>
+            </div>
+
+            <div class="downloadApp">
+                <a window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.udyam.mixcuss&pli=1" class="btn"
+                    target="_blank">
+                    <img src="images/playStore.png" alt="" class="playStoreImage">
+                </a>
             </div>
         </div>
     </div>
-    <div class="featureSeparator"></div>
-    <div class="featureDescription">
-        <div class="reasonDescription reasonDescription1">
-            <h2>We </h2>
-            <h1>do not store</h1>
-            <h2> mobile numbers in the </h2>
-            <h1>user details.</h1>
-            <h2> So, no one can access your </h2>
-            <h1>contact number.</h1>
-        </div>
-        <div class="reasonKey reasonKey1 hidden4">
-            <h1>Privacy</h1>
+
+    <div class="computer">
+        <div class="featureContent">
+            <div class="hidden1">
+                <h2>Five reasons<br>why</h2>
+                <h1>MixCuss</h1>
+            </div>
         </div>
     </div>
-    <div class="featureSeparator"></div>
-    <div class="featureDescription">
-        <div class="reasonKey reasonKey2 hidden4">
-            <h1>Security</h1>
-        </div>
-        <div class="reasonDescription reasonDescription2">
-            <h2>We do not store your </h2>
-            <h1>exact location</h1>
-            <h2> in our </h2>
-            <h1>database</h1>
-            <h2> and your </h2>
-            <h1>security</h1>
-            <h2> is </h2>
-            <h1>prioritized.</h1>
+
+    <div class="mobile">
+        <div class="featureContent">
+            <div class="fiveReason">
+                <img src="images/fiveReasons.svg" alt="">
+            </div>
+            <div class="featureContentText">
+                <h2>Reasons<br>&nbsp;&nbsp;&nbsp; why</h2>
+                <h1>MixCuss</h1>
+            </div>
         </div>
     </div>
-    <div class="featureSeparator"></div>
-    <div class="featureDescription">
-        <div class="reasonDescription reasonDescription3">
-            <h2>You do not need to </h2>
-            <h1>share</h1>
-            <h2> your </h2>
-            <h1>contact number</h1>
-            <h2> to interact with others and </h2>
-            <h1>your digital life</h1>
-            <h2> is in </h2>
-            <h1>your control.</h1>
-        </div>
-        <div class="reasonKey reasonKey3 hidden4">
-            <h1>Control</h1>
-        </div>
-    </div>
-    <div class="featureSeparator"></div>
-    <div class="featureDescription">
-        <div class="reasonKey reasonKey4 hidden4">
-            <h1>No<br>Boundaries</h1>
-        </div>
-        <div class="reasonDescription reasonDescription4">
-            <h1>Everyone</h1>
-            <h2> is now your </h2>
-            <h1>neighbors. Search places</h1>
-            <h2> you wish and meet </h2>
-            <h1>people</h1>
-            <h2> whom you </h2>
-            <h1>like.</h1>
+
+    <div class="computer">
+        <div class="featureDescription reasonZero">
+            <div class="reasonZero1">
+                <div class="reasonZero1ContentWrapper hidden2">
+                    <h2>Nothing</h2>
+                </div>
+            </div>
+            <div class="reasonZero2">
+                <div class="reasonZero2ContentWrapper hidden3">
+                    <h2>just for<br>something </h2>
+                    <h1>New</h1>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="featureSeparator"></div>
-    <div class="featureDescription">
-        <div class="reasonDescription reasonDescription5">
-            <h2>We </h2>
-            <h1>do not use</h1>
-            <h2> AI technology to </h2>
-            <h1>addict</h1>
-            <h2> you in the platform by showing specific </h2>
-            <h1>friend suggestions.</h1>
-            <h2> Live a </h2>
-            <h1>life</h1>
-            <h2> of your </h2>
-            <h1>choice.</h1>
-        </div>
-        <div class="reasonKey reasonKey5 hidden4">
-            <h1>No AI</h1>
+
+    <div class="mobile">
+        <div class="featureDescription reasonZero">
+            <div class="reasonZero1">
+                <div class="reasonZero1ContentWrapper">
+                    <h2>Nothing</h2>
+                </div>
+            </div>
+            <div class="reasonZero2">
+                <div class="reasonZero2ContentWrapper">
+                    <h2>just for<br>something </h2>
+                    <h1>New</h1>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="featureSeparator"></div>
+
+
+    <div class="computer">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="computer">
+        <div class="featureDescription">
+            <div class="reasonDescription reasonDescription1">
+                <h2>We </h2>
+                <h1>do not store</h1>
+                <h2> mobile numbers in the </h2>
+                <h1>user details.</h1>
+                <h2> So, no one can access your </h2>
+                <h1>contact number.</h1>
+            </div>
+            <div class="reasonKey reasonKey1 hidden4">
+                <h1>Privacy</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureDescription">
+            <div class="reasonDescription reasonDescription1">
+                <h2>We </h2>
+                <h1>do not store</h1>
+                <h2> mobile numbers in the </h2>
+                <h1>user details.</h1>
+                <h2> So, no one can access your </h2>
+                <h1>contact number.</h1>
+            </div>
+            <div class="reasonKey reasonKey1">
+                <h1>Privacy</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="computer">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="computer">
+        <div class="featureDescription">
+            <div class="reasonKey reasonKey2 hidden4">
+                <h1>Security</h1>
+            </div>
+            <div class="reasonDescription reasonDescription2">
+                <h2>We do not store your </h2>
+                <h1>exact location</h1>
+                <h2> in our </h2>
+                <h1>database</h1>
+                <h2> and your </h2>
+                <h1>security</h1>
+                <h2> is </h2>
+                <h1>prioritized.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureDescription">
+            <div class="reasonKey reasonKey2">
+                <h1>Security</h1>
+            </div>
+            <div class="reasonDescription reasonDescription2">
+                <h2>We do not store your </h2>
+                <h1>exact location</h1>
+                <h2> in our </h2>
+                <h1>database</h1>
+                <h2> and your </h2>
+                <h1>security</h1>
+                <h2> is </h2>
+                <h1>prioritized.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="computer">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="computer">
+        <div class="featureDescription">
+            <div class="reasonDescription reasonDescription3">
+                <h2>You do not need to </h2>
+                <h1>share</h1>
+                <h2> your </h2>
+                <h1>contact number</h1>
+                <h2> to interact with others and </h2>
+                <h1>your digital life</h1>
+                <h2> is in </h2>
+                <h1>your control.</h1>
+            </div>
+            <div class="reasonKey reasonKey3 hidden4">
+                <h1>Control</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureDescription">
+            <div class="reasonDescription reasonDescription3">
+                <h2>You do not need to </h2>
+                <h1>share</h1>
+                <h2> your </h2>
+                <h1>contact number</h1>
+                <h2> to interact with others and </h2>
+                <h1>your digital life</h1>
+                <h2> is in </h2>
+                <h1>your control.</h1>
+            </div>
+            <div class="reasonKey reasonKey3">
+                <h1>Control</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="computer">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="computer">
+        <div class="featureDescription">
+            <div class="reasonKey reasonKey4 hidden4">
+                <h1>No<br>Boundaries</h1>
+            </div>
+            <div class="reasonDescription reasonDescription4">
+                <h1>Everyone</h1>
+                <h2> is now your </h2>
+                <h1>neighbors. Search places</h1>
+                <h2> you wish and meet </h2>
+                <h1>people</h1>
+                <h2> whom you </h2>
+                <h1>like.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureDescription">
+            <div class="reasonKey reasonKey4">
+                <h1>No<br>Boundaries</h1>
+            </div>
+            <div class="reasonDescription reasonDescription4">
+                <h1>Everyone</h1>
+                <h2> is now your </h2>
+                <h1>neighbors. Search places</h1>
+                <h2> you wish and meet </h2>
+                <h1>people</h1>
+                <h2> whom you </h2>
+                <h1>like.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="computer">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="computer">
+        <div class="featureDescription">
+            <div class="reasonDescription reasonDescription5">
+                <h2>We </h2>
+                <h1>do not use</h1>
+                <h2> AI technology to </h2>
+                <h1>addict</h1>
+                <h2> you in the platform by showing specific </h2>
+                <h1>friend suggestions.</h1>
+                <h2> Live a </h2>
+                <h1>life</h1>
+                <h2> of your </h2>
+                <h1>choice.</h1>
+            </div>
+            <div class="reasonKey reasonKey5 hidden4">
+                <h1>No AI</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureDescription">
+            <div class="reasonDescription reasonDescription5">
+                <h2>We </h2>
+                <h1>do not use</h1>
+                <h2> AI technology to </h2>
+                <h1>addict</h1>
+                <h2> you in the platform by showing specific </h2>
+                <h1>friend suggestions.</h1>
+                <h2> Live a </h2>
+                <h1>life</h1>
+                <h2> of your </h2>
+                <h1>choice.</h1>
+            </div>
+            <div class="reasonKey reasonKey5">
+                <h1>No AI</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="computer">
+        <div class="featureSeparator"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="featureSeparator"></div>
+    </div>
+
     <div class="footer">
         <h3>Copyright reserved<br>Contact us</h3>
     </div>
