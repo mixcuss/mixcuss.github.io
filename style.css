@@ -304,9 +304,7 @@ body {
 .privacyPolicyWrapper {
     display: block;
     padding: 1.5625vw 10%;
-    text-align: justify;
     text-justify: inter-word;
-    padding-top: 50px;
 }
 
 .privacyPolicyHeader h1 {
@@ -346,22 +344,31 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
+    text-align: justify;
 }
 
-.textContent a:link {
+.textContent a:link, .information a:link {
     color: #ffffff;
 }
 
-.textContent a:visited {
+.textContent a:visited, .information a:visited {
     color: #ffffff;
 }
 
-.textContent a:hover {
+.textContent a:hover, .information a:hover {
     color: #00A2FF;
 }
 
-.textContent a:active {
+.textContent a:active, .information a:active {
     color: #00A2FF;
+}
+
+.information {
+    color: #ABA9BB;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .initialAnimation1 {

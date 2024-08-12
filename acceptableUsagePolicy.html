@@ -5,21 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>MixCuss: Legal</title>
+    <link rel="stylesheet" href="styleMobile.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/appIcon_transparent.png" />
+    <script defer src="script.js"></script>
+    <script defer src="scriptMobile.js"></script>
+    <title>MixCuss: Acceptable Usage Policy</title>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img src="images/logoWithName.png" class="logo"></a>
-        <div>
-            <a href="#" class="downloadApp btn">Download App</a>
+    <div class="computer">
+        <nav>
+            <img src="images/logoWithName.png" class="logo">
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=com.udyam.mixcuss" class="downloadApp btn"
+                    target="_blank">Install App</a>
+            </div>
+            <ul>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="termsOfUse.html">Terms of Use</a></li>
+                <li><a href="legal.html">Legal</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mobile">
+        <nav>
+            <a href="index.html">
+                <img src="images/logoWithName.png" alt="MixCuss" class="logo">
+            </a>
+        </nav>
+    </div>
+
+    <div class="mobile">
+        <div class="menuButtonContainer">
+            <div onclick="openSidebar()" id="menuButton" class="menuButton"></div>
+            <div onclick="closeSidebar()" id="closeButton" class="menuButton"></div>
         </div>
-        <ul>
-            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-            <li><a href="termsOfUse.html">Terms of Use</a></li>
-            <li><a href="legal.html">Legal</a></li>
-        </ul>
-    </nav>
+    </div>
+
+    <div class="mobile">
+        <div id="sideNavBarrier" onclick="closeSidebar()"></div>
+    </div>
+
+    <div class="mobile">
+        <div id="mySidenav" class="sidenav">
+            <a onclick="closeSidebar()" href="about.html">About</a>
+            <a onclick="closeSidebar()" href="privacyPolicy.html">Privacy Policy</a>
+            <a onclick="closeSidebar()" href="termsOfUse.html">Terms of Use</a>
+            <a onclick="closeSidebar()" href="legal.html">Legal</a>
+            <a onclick="closeSidebar()" href="contact.html">Contact</a>
+          </div>
+    </div>
+
+    <!-- Main content starts from here -->
 
     <div class="privacyPolicyWrapper">
         <div class="privacyPolicyHeader">

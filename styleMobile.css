@@ -8,6 +8,15 @@
     .mobile {
         display: inline-block;
     }
+
+    .privacyPolicyWrapper {
+        padding: 10vw 5vw;
+        margin-top: 15vw;
+    }
+
+    .information {
+        text-align: left;
+    }
 }
 
 .mobile nav {
@@ -33,7 +42,8 @@
 .mobile .menuButtonContainer {
     position: fixed;
     top: 0;
-    width: 100%;
+    right: 0;
+    width: 15vw;
     padding: 4vw 5%;
     display: block;
     align-items: center;
@@ -83,7 +93,7 @@
     z-index: 2;
     top: 0;
     right: 0;
-    background-color: #10305A;
+    background-color: #00142c;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20vw;
@@ -91,7 +101,8 @@
 
 .mobile .sidenav a {
     width: 100%;
-    padding: 0vw 10vw 10vw 10vw;
+    margin: 5vw 10vw 5vw 0vw;
+    padding: 2vw 10vw 2vw 0vw;
     text-decoration: none;
     text-align: right;
     font-size: 6vw;
@@ -340,3 +351,5 @@
     text-align: center;
     margin-top: 3.8vw;
 }
+
+
