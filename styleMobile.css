@@ -116,6 +116,8 @@
     color: #00a2ff;
   }
 
+
+
 .mobile .header-img {
     width: 100%;
     float: left;
@@ -124,7 +126,7 @@
 
 .mobile .headerDescription {
     width: 100%;
-    padding: 8vw 0;
+    padding: 10vw 0;
     float: left;
     text-align: center;
 }
@@ -147,7 +149,7 @@
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin-bottom: 6vw;
+    margin-bottom: 0vw;
 }
 
 .mobile .playStoreImage {
@@ -223,6 +225,7 @@
 .mobile .reasonZero {
     height: 20vw;
     background-color: white;
+    margin-top: 0vw;
 }
 
 .mobile .reasonZero1 {
