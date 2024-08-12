@@ -1,5 +1,5 @@
 function openSidebar() {
-    document.getElementById("mySidenav").style.width = "45%";
+    document.getElementById("mySidenav").style.width = "70%";
     document.getElementById("menuButton").style.display = "none";
     document.getElementById("closeButton").style.display = "block";
     document.getElementById("sideNavBarrier").style.display = "block";
