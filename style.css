@@ -24,6 +24,10 @@ body {
     .computer {
         display: inline-block;
     }
+
+    .privacyPolicyWrapper {
+        margin-top: 7vw;
+    }
 }
 
 @media only screen and (max-width:1000px) {
@@ -34,17 +38,22 @@ body {
 
 .computer nav {
     width: 100%;
-    padding: 0.5vw 5%;
+    height: 4.5vw;
+    padding: 0.75vw 5%;
     display: inline-block;
     align-items: center;
     vertical-align: middle;
     margin: 0;
     font-size: 1vw;
     background-color: #10305A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-.computer .logo {
-    height: 3.125vw;
+.computer nav .logo {
+    height: 3vw;
     float: left;
 }
 
@@ -83,8 +92,9 @@ body {
     border-radius: 2.34375vw;
 }
 
-.headerContent {
+.computer .headerContent {
     display: block;
+    margin-top: 4.5vw;
 }
 
 .computer .header-img {
@@ -123,20 +133,48 @@ body {
     width: 100%;
     background-color: #FFEFDE;
     margin-top: 4.6875vw;
-    padding: 4.6875vw 6%;
+    padding-left: 10vw;
     color: #4D4B55;
+}
+
+.computer .featureContent .fiveReason {
+    height: 34vw;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.computer .featureContent .fiveReason img {
+    display: block;
+    height: 45vw;
+    position: relative;
+    top: -6vw;
+}
+
+
+.computer .featureContent .featureContentText {
+    display: block;
+    height: 34vw;
+    width: 30vw;
+    float: left;
 }
 
 .computer .featureContent h1 {
     font-size: 6.25vw;
     font-weight: 500;
-    line-height: 9.375vw;
+    /* line-height: 6.375vw; */
+    position: relative;
+    top: 6vw;
+    left: -5vw;
 }
 
 .computer .featureContent h2 {
     font-size: 3.125vw;
     font-weight: 300;
-    line-height: 4.6875vw;
+    line-height: 3vw;
+    position: relative;
+    top: 5vw;
+    left: 2vw;
 }
 
 .computer .featureDescription {
@@ -163,7 +201,7 @@ body {
     display: inline-block;
 }
 
-.computer.reasonZero {
+.computer .reasonZero {
     height: 20vw;
     background-color: white;
 }
@@ -177,7 +215,7 @@ body {
 
 .computer .reasonZero1ContentWrapper {
     float: right;
-    margin-top: 3.90625vw;
+    margin-top: 4vw;
 }
 
 .computer .reasonZero1ContentWrapper h2 {
@@ -198,7 +236,7 @@ body {
 
 .computer .reasonZero2ContentWrapper {
     float: left;
-    margin-top: 3.90625vw;
+    margin-top: 4vw;
     color: white;
     padding-left: 2.734375vw;
 }
@@ -365,7 +403,7 @@ body {
 
 .information {
     color: #ABA9BB;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     text-align: justify;

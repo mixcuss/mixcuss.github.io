@@ -93,7 +93,7 @@
     z-index: 2;
     top: 0;
     right: 0;
-    background-color: #00142c;
+    background-color: #10305a;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20vw;
@@ -159,6 +159,7 @@
 .mobile .featureContent {
     display: inline-block;
     width: 100%;
+    height: 50vw;
     background-color: #FFEFDE;
     padding-left: 7vw;
     color: #4D4B55;
