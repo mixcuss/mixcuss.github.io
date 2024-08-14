@@ -45,11 +45,12 @@ body {
     vertical-align: middle;
     margin: 0;
     font-size: 1vw;
-    background-color: #10305A;
+    background-color: #04316a;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
+    box-shadow: 0 0px 0.5vw 0.25vw rgba(0, 0, 0, 0.19);
 }
 
 .computer nav .logo {
@@ -131,7 +132,7 @@ body {
 .computer .featureContent {
     display: inline-block;
     width: 100%;
-    background-color: #FFEFDE;
+    background-color: #fcdebf;
     margin-top: 4.6875vw;
     padding-left: 10vw;
     color: #4D4B55;
