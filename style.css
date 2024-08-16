@@ -152,7 +152,6 @@ body {
     top: -6vw;
 }
 
-
 .computer .featureContent .featureContentText {
     display: block;
     height: 34vw;
@@ -337,6 +336,7 @@ body {
 }
 
 .footer h3 {
+    font-size: 16px;
     font-weight: 200;
     line-height: 150%;
 }
