@@ -132,7 +132,7 @@ body {
 .computer .screenShotsContainer {
     position: relative;
     width: 50%;
-    min-height: 50vw;
+    min-height: 45vw;
     float: right;
     display: block;
     text-align: left;
@@ -149,33 +149,78 @@ body {
 }
 
 .screenShot1 {
-    margin-left: 40%;
-    scale: 1.0;
-    z-index: 10;
+    margin-left: 10%;
+    scale: 0.7;
+    z-index: 8;
+    transition: margin-left linear .2s, scale linear .2s, z-index linear .2s;
 }
 
 .screenShot2 {
     margin-left: 22%;
     scale: 0.85;
     z-index: 9;
+    transition: margin-left linear .2s, scale linear .2s, z-index linear .2s;
 }
 
 .screenShot3 {
-    margin-left: 10%;
-    scale: 0.7;
-    z-index: 8;
+    margin-left: 40%;
+    scale: 1.0;
+    z-index: 10;
+    transition: margin-left linear .2s, scale linear .2s;
 }
 
 .screenShot4 {
-    margin-left: 63%;
-    scale: 0.7;
-    z-index: 8;
-}
-
-.screenShot5 {
     margin-left: 53%;
     scale: 0.85;
     z-index: 9;
+    transition: margin-left linear .2s, scale linear .2s, z-index ease-out .25s;
+}
+
+.screenShot5 {
+    margin-left: 63%;
+    scale: 0.7;
+    z-index: 8;
+    transition: margin-left linear .2s, scale linear .2s, z-index linear .2s;
+}
+
+.screenShot6 {
+    margin-left: 40%;
+    scale: 0.6;
+    z-index: 7;
+    transition: margin-left linear .2s, scale linear .2s, z-index linear .2s;
+}
+
+.screenShotsNavigatorContainer {
+    position: relative;
+    width: 80%;
+    min-height: 0.9375vw;
+    float: right;
+    display: block;
+    z-index: 5;
+}
+
+.screenShotsNavigator {
+    width: 20%;
+    min-height: 0.9375vw;
+    margin-left: 64.05%;
+    text-align: center;
+    z-index: 5;
+}
+
+.screenShotsNavigatorTab {
+    display: inline-block;
+    width: 0.9375vw;
+    height: 0.9375vw;
+    border-radius: 50%;
+    border: 2px solid #00A2FF;
+    margin-left: 0.15625vw;
+    margin-right: 0.15625vw;
+    cursor: pointer;
+}
+
+.screenShotsNavigator .selected {
+    background-color: #00A2FF;
+    cursor: default;
 }
 
 .computer .featureContent {
