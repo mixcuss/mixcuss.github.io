@@ -173,7 +173,7 @@ body {
     margin-left: 53%;
     scale: 0.85;
     z-index: 9;
-    transition: margin-left linear .2s, scale linear .2s, z-index ease-out .25s;
+    transition: margin-left linear .2s, scale linear .2s, z-index linear .1s;
 }
 
 .screenShot5 {
@@ -421,18 +421,81 @@ body {
     margin-right: 10%;
 }
 
+.footerSeparator {
+    width: 100%;
+    height: 8px;
+    background-color: #ffbe55;
+    margin-top: 8vw;
+}
+
 .footer {
     width: 100%;
-    padding: 3.125vw 10%;
-    margin-top: auto;
+    text-align: left;
+    vertical-align: top;
     color: white;
     background-color: #4D4B55;
+    padding-top: 6vw;
+    padding-bottom: 3vw;
+}
+
+.subFooter {
+    float: left;
+    min-height: 200px;
+    padding: 0 6vw;
+}
+
+.footer .computer .logo {
+    height: 2.8vw;
+}
+
+.footer .computer .footerLogo {
+    width: 3vw;
+    height: 3vw;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-right: 1.5vw;
+    cursor: pointer;
+}
+
+#linkedInLogo {
+    padding: 0.3vw;
+}
+
+#facebookLogo {
+    padding: 0.3vw;
+}
+
+#instagramLogo {
+    padding: 0.3vw;
+}
+
+#youtubeLogo {
+    padding: 0.2vw;
+}
+
+#xLogo {
+    padding: 0.3vw;
 }
 
 .footer h3 {
     font-size: 16px;
-    font-weight: 200;
-    line-height: 150%;
+    font-weight: 450;
+    line-height: 100%;
+    color: #00A2FF;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fcdebf;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fcdebf;
 }
 
 .privacyPolicyWrapper {
@@ -509,6 +572,29 @@ body {
     opacity: 0;
     transform: scale(0, 0);
     animation: scale1 0.5s linear forwards;
+}
+
+.qaSeparator {
+    width: 100%;
+    height: 10px;
+}
+
+.foundarAvatar {
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    margin: 5vw 5vw 5vw 0;
+    border-radius: 50%;
+    box-shadow: 0 0px 0.75vw 0.5vw rgba(0, 0, 0, 0.15);
+}
+
+.foundersNote {
+    float: left;
+    margin: 15vw 0vw 5vw 1vw;
+    width: 41vw;
+    padding: 3vw;
+    box-shadow: 0 0px 0.75vw 0.5vw rgba(0, 0, 0, 0.15);
+    border-radius: 1vw;
 }
 
 @keyframes scale1 {
