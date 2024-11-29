@@ -75,6 +75,9 @@ function screenShotsNavigatorTab(newId) {
 }
 
 async function rotateScreenShots(oldId, newId) {
+    // Implement animation lock
+    // Find shortest path for the animation
+
     if (oldId > newId) {
         for (var i = 0; i < (oldId - newId); i++) {
             await rotateScreenShotsClockwise();
