@@ -54,7 +54,8 @@ body {
 }
 
 .computer nav .logo {
-    height: 3vw;
+    height: 2.9vw;
+    padding-top: 0.06vw;
     float: left;
 }
 
