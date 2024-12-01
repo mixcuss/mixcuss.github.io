@@ -574,6 +574,33 @@ body {
     animation: scale1 0.5s linear forwards;
 }
 
+.descriptionSectionWrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+.textAvatar {
+    float: left;
+    padding: 3vw;
+    margin: 5vw 5vw 5vw 2.5vw;
+    border-radius: 50%;
+    box-shadow: 0.125vw 0.1vw 0.75vw 0.5vw rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffbe55;
+    font-size: 3.2vw;
+    font-weight: 200;
+    line-height: 120%;
+    width: 23vw;
+    height: 23vw;
+}
+
+.aboutAvatarText {
+    margin-top: 12.5vw;
+}
+
 .qaSeparator {
     width: 100%;
     height: 10px;
@@ -589,9 +616,13 @@ body {
     box-shadow: 0.125vw 0.1vw 0.75vw 0.5vw rgba(0, 0, 0, 0.15);
 }
 
-.foundersNote {
+.founderNote {
+    margin-top: 14vw;
+}
+
+.avatarSideText {
     float: left;
-    margin: 14.0vw 0vw 5vw 0vw;
+    margin-bottom: 5vw;
     width: 40vw;
     padding: 2.4vw 1vw 8vw 3vw;
     border-radius: 2vw 0 0 0;
@@ -602,6 +633,12 @@ body {
     line-height: 175%;
     text-align: left;
     color: #fcdebf;
+}
+
+.aboutAvatarText .information {
+    text-align: left;
+    color: #fcdebf;
+    font-weight: 200;
 }
 
 @keyframes scale1 {
