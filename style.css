@@ -583,7 +583,7 @@ body {
     float: left;
     width: 25vw;
     height: 25vw;
-    margin: 5vw 5vw 5vw 0;
+    margin: 5vw 5vw 5vw 2.5vw;
     padding: 1.6vw;
     border-radius: 50%;
     box-shadow: 0.125vw 0.1vw 0.75vw 0.5vw rgba(0, 0, 0, 0.15);
@@ -593,7 +593,7 @@ body {
     float: left;
     margin: 14.0vw 0vw 5vw 0vw;
     width: 40vw;
-    padding: 2.4vw 1vw 1vw 3vw;
+    padding: 2.4vw 1vw 8vw 3vw;
     border-radius: 2vw 0 0 0;
     border-left: 1px solid #4f9da7;
     border-top: 1px solid #4f9da7;
