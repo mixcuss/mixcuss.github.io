@@ -581,21 +581,22 @@ body {
 
 .foundarAvatar {
     float: left;
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     margin: 5vw 5vw 5vw 0;
-    padding: 1.8vw;
+    padding: 1.6vw;
     border-radius: 50%;
     box-shadow: 0.125vw 0.1vw 0.75vw 0.5vw rgba(0, 0, 0, 0.15);
 }
 
 .foundersNote {
     float: left;
-    margin: 16.1vw 0vw 5vw 1vw;
+    margin: 14.0vw 0vw 5vw 0vw;
     width: 40vw;
-    padding: 2.8vw 4vw;
-    border-radius: 2vw;
-    border: 1px solid #4f9da7;
+    padding: 2.4vw 1vw 1vw 3vw;
+    border-radius: 2vw 0 0 0;
+    border-left: 1px solid #4f9da7;
+    border-top: 1px solid #4f9da7;
     font-size: 1.5vw;
     font-weight: 200;
     line-height: 175%;
