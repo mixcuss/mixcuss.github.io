@@ -430,6 +430,7 @@ body {
 }
 
 .footer {
+    display: inline-block;
     width: 100%;
     text-align: left;
     vertical-align: top;
@@ -445,11 +446,11 @@ body {
     padding: 0 6vw;
 }
 
-.footer .computer .logo {
+.computer .footer .logo {
     height: 2.8vw;
 }
 
-.footer .computer .footerLogo {
+.computer .footer .footerLogo {
     width: 3vw;
     height: 3vw;
     vertical-align: middle;
@@ -457,7 +458,6 @@ body {
     border-radius: 50%;
     border: 1px solid #ffffff;
     margin-right: 1.5vw;
-    cursor: pointer;
 }
 
 #linkedInLogo {

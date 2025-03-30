@@ -117,7 +117,6 @@
     color: #00a2ff;
 }
 
-
 .mobile .header-img {
     width: 100%;
     float: left;
@@ -354,6 +353,25 @@
     float: right;
     text-align: center;
     margin-top: 3.8vw;
+}
+
+.mobile .footer {
+    padding-left: 4vw;
+}
+
+.mobile .footer .logo {
+    height: 7vw;
+}
+
+.mobile .footer .footerLogo {
+    width: 9vw;
+    height: 9vw;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-right: 2.5vw;
+    margin-bottom: 3vw;
 }
 
 
