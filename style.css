@@ -674,14 +674,14 @@ body {
 @media only screen and (max-width:1000px) {
     .avatarSideText {
         float: right;
-        margin: 10vw 2vw 15vw 0;
-        width: 70vw;
+        margin: 10vw 0vw 15vw 0;
+        width: 75vw;
         padding: 5vw 2vw 10vw 6vw;
         border-radius: 5vw 0 0 0;
         border-left: 1px solid #4f9da7;
         border-top: 1px solid #4f9da7;
-        font-size: 3vw;
-        font-weight: 200;
+        font-size: 16px;
+        font-weight: 300;
         line-height: 175%;
         text-align: left;
         color: #fcdebf;
