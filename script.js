@@ -57,7 +57,16 @@ function scrollAnimation(){
     );
 }
 
-function screenShotsNavigatorTab(newId) {
+async function screenShotsNavigator(newId) {
+    var isScreenShotAnimating = document.getElementById("isScreenShotAnimating").innerHTML;
+
+    if (isScreenShotAnimating == "true") {
+        return;
+    }
+
+    // Set animation lock
+    document.getElementById("isScreenShotAnimating").innerHTML = "true";
+
     // Get the element
     const collection = document.getElementsByClassName("selected");
 
@@ -68,24 +77,59 @@ function screenShotsNavigatorTab(newId) {
     collection[0].classList.remove("selected");
 
     // Add class
-    document.getElementById("screenShotsNavigatorTab" + newId).classList.add("selected");
+    document.getElementById("screenShot" + newId).classList.add("selected");
 
     // Rotate screenshots
-    rotateScreenShots(oldId, newId);
+    await rotateScreenShots(oldId, newId);
+
+    // Set animation lock
+    document.getElementById("isScreenShotAnimating").innerHTML = "false";
+
+    return;
 }
 
 async function rotateScreenShots(oldId, newId) {
-    // Implement animation lock
-    // Find shortest path for the animation
+    // Clockwise convention: Left to right
+    //
+    // The logic is following
+    // If the newId is on the right of oldId, move towards left.
+    // Means move anti-clockwise.
+    // Similarly, if the newId is on the left of oldId, move towards
+    // right. Means move clockwise.
+    //
+    // Given a oldId the set of lhsIds and rhsIds can be determind easily
+    // Once detemind, if newId belongs to the lhsIds rotate clockwise
+    // else rotate anti-clockwise
+    let lhsIds = [];
+    let rhsIds = [];
 
-    if (oldId > newId) {
-        for (var i = 0; i < (oldId - newId); i++) {
-            await rotateScreenShotsClockwise();
-        }
+    for (var i = 0; i < 2; i++) {
+        var j = oldId - i - 1;
+
+        lhsIds[i] = applyPeriodicBoundaryConditionVisible(j);
     }
 
-    if (newId > oldId) {
-        for (var i = 0; i < (newId - oldId); i++) {
+    for (var i = 0; i < 2; i++) {
+        var j = oldId + i + 1;
+
+        rhsIds[i] = applyPeriodicBoundaryConditionVisible(j);
+    }
+
+
+    if (lhsIds.includes(newId)) {
+        // Find number of steps
+        var noOfSteps = lhsIds.indexOf(newId) + 1;
+
+        // Rotate clockwise
+        for (var i = 0; i < noOfSteps; i++) {
+            await rotateScreenShotsClockwise();
+        }
+    } else {
+        // Find number of steps
+        var noOfSteps = rhsIds.indexOf(newId) + 1;
+
+        // Rotate anti-clockwise
+        for (var i = 0; i < noOfSteps; i++) {
             await rotateScreenShotsAntiClockwise();
         }
     }
@@ -165,6 +209,20 @@ async function moveScreenShotBackward(classId) {
 
     // Return
     return;
+}
+
+function applyPeriodicBoundaryConditionVisible(i) {
+    if (i >= 1 && i <= 5) {
+        return i;
+    }
+
+    if (i > 5) {
+        return i - 5;
+    }
+
+    if (i < 1) {
+        return i + 5;
+    }
 }
 
 function applyPeriodicBoundaryCondition(i) {
