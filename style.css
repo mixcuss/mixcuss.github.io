@@ -59,17 +59,24 @@ body {
     float: left;
 }
 
+.computer nav .contachLogo {
+    height: 1.78vw;
+    display: block;
+}
+
 .computer nav ul {
     float: right;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .computer nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0.78125vw 1.171875vw;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0.0vw 1.171875vw;
+    padding-top: 0.48vw;
 }
 
 .computer nav ul li a {
